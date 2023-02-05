@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    margin-bottom: 80px;
+}
+
+.navbar a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar .brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.col-8 {
+    text-align: justify;
+    font-size: 18px;
+    /* width: 60%; */
+    margin: 0 auto;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.interests {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 90%;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 300px;
+    margin: 20px;
+    /* text-align: left; */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+object {
+    margin-top: 20px;
+}
+
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 50px;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}

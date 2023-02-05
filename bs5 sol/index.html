@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a class="brand" href="#">My Portfolio</a>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#cv">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </section>
+
+
+    <section id="home">
+        <!-- Home Page -->
+        <div class="home">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./IMG_3132.JPG" alt="Profile Picture" class="profile-picture">
+                </div>
+                <div class="col-8">
+                    <h1 class="name">Muhammad Umar Khan</h1>
+                    <h2 class="interests">Software Developer</h2>
+                    <p class="info">I'm an enthusiastic and diligent software technology professional. Having worked on
+                        a variety of projects around various domains equips me with the ability to adapt, enhance and
+                        optimize
+                        towards quality solution delivery. Eager to learn and solve real world challenges.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="projects">
+        <!-- Projects Page -->
+        <div class="row-1">
+            <h1 class="page-title">PROJECTS</h1>
+        </div>
+        <div class="row-2">
+            <div class="projects">
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Tic Tac Toe AI-Game (Python)</h2>
+                        <p class="card-text">Tic Tac Toe AI is a game in which two players alternate marking X and O on
+                            a 3x3 grid. The player who succeeds in placing three of their marks in a horizontal,
+                            vertical, or diagonal row wins the game. A Tic Tac Toe AI game programmed in Python would
+                            use a combination of algorithms and data structures, such as minimax and alpha-beta pruning,
+                            to simulate the game's moves and determine the best strategy for the AI player. The program
+                            would also have a user interface for players to interact with the game, such as a GUI or a
+                            text-based interface.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">EDA on Bitcoin Cryptocurrency Market (Data Science)</h2>
+                        <p class="card-text">Exploratory Data Analysis (EDA) on the Bitcoin cryptocurrency market is a
+                            process of examining, cleaning, transforming, and modeling data with the goal of discovering
+                            meaningful insights and relationships. This process is an important step in the data science
+                            workflow and helps to understand the underlying structure of the data and identify any
+                            trends, patterns, or outliers.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Entity Relation of Sales Store and their implementation (SQL)</h2>
+                        <p class="card-text">The Entity-Relationship (ER) model of a Sales Store is a graphical
+                            representation of entities (representing objects or concepts) and their relationships to
+                            each other. It is a way of organizing and representing data in a database.
+                            In the context of a Sales Store, entities could include customers, products, orders, and
+                            sales. Relationships between these entities could include: a customer placing an order, a
+                            product being part of an order, and an order resulting in a sale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-3"></div>
+
+        <hr>
+    </section>
+
+    <section className="CV" id="cv">
+        <!-- CV Page -->
+        <div class="container">
+            <h1>My CV</h1>
+            <p>Here is my latest CV, feel free to download it:</p>
+            <a href="./Muhammad Umar Khan.pdf" download>Download CV</a>
+            <object data="path/to/your/cv.pdf" type="application/pdf" width="100%" height="600px">
+                <p>It appears your browser does not support PDFs. You can download the CV directly from this <a
+                        href="./Muhammad Umar Khan.pdf">link</a>.</p>
+            </object>
+        </div>
+        <hr>
+    </section>
+
+    <section className="contact-page" id="contact">
+        <!-- Contact Page -->
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
