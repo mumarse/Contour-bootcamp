@@ -1,0 +1,169 @@
+/* reset default margin padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* utility */
+
+.flex {
+    display: flex;
+}
+.flex > h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Our Classes */
+
+.outer-padding {
+    padding: 0 100px;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+/* Hero section */
+
+.hero {
+    background: url('./images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero > p {
+    /* font-size: 18px; */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: 1px solid white;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+/* Feature Section */
+
+.feature-text {
+    margin-top: 5rem;
+}
+
+.feature-text > h3 {
+    margin-bottom: 1.5rem;
+}
+
+.feature-text > p {
+    margin-bottom: 5rem;
+}
+
+
+.feature {
+    margin: 0 3rem;
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.feature-cards {
+    background-color: #5A5A5A;
+     padding: 40px 100px;
+}
+.feature-card {
+    background-color: white;
+    margin: 0 20px;
+    /* align-items: center; */
+    width: 30vw;
+}
+.card-img-one {
+    background-image: url('./images/webdev.jpg');
+}
+.card-img-two {
+    background-image: url('./images/mobapp.png');
+}
+.card-img-three {
+    background-image: url('./images/techmarket.jpg')
+}
+.card-img {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.card-body {
+    padding: 20px 40px;
+    padding-top: 0;
+}
+.card-body > h3{
+    text-align: center;
+    margin: 1.25rem;
+}
+.card-body > p {
+    text-align: center;
+}
+.feature-text > h3 {
+    text-align: center;
+}
+.feature-text > p {
+    text-align: center;
+}
+.info {
+    margin-top: 1rem;
+    
+    
+}
+.contact {
+    text-align: center;
+    padding-left: 100px;
+    background: rgb(0, 153, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.about {
+    text-align: center;
+    padding-right: 100px;
+    background: #5A5A5A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.footer {
+    background: black;
+    color: white;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer > div > b > span {
+    color:rgb(0, 153, 255);
+}

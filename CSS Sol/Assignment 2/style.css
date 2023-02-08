@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,200&display=swap');
+* {
+    padding: 0; margin: 0; box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* utility classes */
+
+.flex {
+    display: flex;
+} 
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* main classes */
+section {
+    margin: 1rem 0;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+section:first-child {
+    margin-top: 0;
+}
+.main-banner {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/landing.jpg');
+}
+.sales-product {
+    padding: 0 60px;
+}
+.sales-product > h1 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.sales-product > .product-cards {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    padding-bottom: 20px;
+}
+.card > .img-1 {
+    background: url('./images/mb3.jpg');
+}
+.card > .img-2 {
+    background: url('./images/mb6.jpg');
+}
+.card > .img-3 {
+    background: url('./images/mb5.jpg');
+}
+.card > .img-4 {
+    background: url('./images/mb7.jpg');
+}
+
+.card > .img {
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.card > .img:hover {
+    transform: scale(1.1);
+    /* z-index: -500; */
+}
+.card-body {
+    align-items: center;
+    gap: 5px;
+}
+.stars {
+    margin: 10px auto;
+    gap:2px;
+    color: yellow;
+}
+.star {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.card-body > .title {
+    color: grey;
+}
+.card-body > .price {
+    font-weight: bold;
+}
+.btn {
+    padding: 5px 10px;
+    cursor:pointer;
+    border: none;
+    text-transform: uppercase;
+}
+.card-body > .btn {
+    background-color: black;
+    color: white;
+}
+.card-body > .btn:hover {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.banner {
+    background: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    gap: 10px;
+    font-size:2rem;
+    text-transform: uppercase;
+    color: white;
+}
+.banner-description {
+   font-size: 1rem;
+}
+.shop-now {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.shop-now:hover {
+    background-color: rgb(201, 201, 12);
+}
+
+.hash-tag {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hash-tag > span {
+    color: rgb(255, 208, 0);
+    
+}
+.product-album {
+    gap: 5px;
+}
+.album-img-1 { background-image: url('./images/mb01.jpg');}
+.album-img-2 { background-image: url('./images/mb02.jpg');}
+.album-img-3 { background-image: url('./images/mb03.jpg');}
+.album-img-4 { background-image: url('./images/mb04.jpg');}
+.album-img-5 { background-image: url('./images/mb05.jpg');}
+.album-img-6 { background-image: url('./images/mb06.jpg');}
+.album-img-7 { background-image: url('./images/mb07.jpg');}
+.album-img-8 { background-image: url('./images/mb08.jpg');}
+.album-img {
+    width:100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: 2px solid #ccc;
+}
+
+@media screen and (max-width: 900px) {
+    .main-banner {
+        height: 200px;
+    }
+    .sales-product {
+        padding: 0 60px;
+    }
+    .sales-product > h1 {
+        text-align: center;
+
+    }
+    .sales-product > .product-cards {
+        gap: 10px;
+    }
+    .banner-heading {
+        text-align: center;
+    }
+    .banner-description {
+        text-align: center;
+    }
+    .tag-description {
+        text-align: center;
+     }
+}
